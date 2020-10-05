@@ -2,6 +2,8 @@ package com.example.danceclasses;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
@@ -17,7 +19,23 @@ public class DetailsActivity extends AppCompatActivity {
         setContentView(R.layout.details_layout);
         Log.d(TAG, "onCreate: started");
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getIncomingIntent();
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                finish();
+                return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        return true;
     }
 
     private void getIncomingIntent() {
