@@ -23,21 +23,6 @@ public class DetailsActivity extends AppCompatActivity {
         getIncomingIntent();
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                finish();
-                return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
-
-    public boolean onCreateOptionsMenu(Menu menu) {
-        return true;
-    }
-
     private void getIncomingIntent() {
         Log.d(TAG, "getincomingIntent: checking for incoming intents.");
 
