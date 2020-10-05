@@ -11,15 +11,12 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class RecyclerViewAdapter extends RecyclerView.Adapter<ReyclerViewAdapter.ViewHolder> {
+public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
     private static final String TAG = "RecyclerViewAdapter";
 
     private String[] Titles = new String[6];
     private String[] Descriptions = new String[6];
     private Context mcontext;
-
-    //TextView title;
-    //TextView description;
 
     public RecyclerViewAdapter(Context mcontext, String[] TitlesArray, String[] DescriptionsArray) {
         this.Titles = TitlesArray;
@@ -36,7 +33,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<ReyclerViewAdapter
     }
 
     @Override
-    public void OnBindViewHolder(@NonNull ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Log.d(TAG, "onBindViewHolder: called");
         holder.title.setText(Titles[position]);
         holder.description.setText(Descriptions[position]);
