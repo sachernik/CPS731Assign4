@@ -17,25 +17,14 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     private String[] Titles = new String[10];
     private String[] Descriptions = new String[10];
-
-    String[] LongDescs = new String[]{
-            "placeholder1",
-            "placeholder2",
-            "placeholder3",
-            "placeholder4",
-            "placeholder5",
-            "placeholder6",
-            "placeholder7",
-            "placeholder8",
-            "placeholder9",
-            "placeholder10",
-    };
+    private String[] LongDescs = new String[10];
 
     private Context mcontext;
 
-    public RecyclerViewAdapter(Context mcontext, String[] TitlesArray, String[] DescriptionsArray) {
+    public RecyclerViewAdapter(Context mcontext, String[] TitlesArray, String[] DescriptionsArray, String[]LongDescsArray) {
         this.Titles = TitlesArray;
         this.Descriptions = DescriptionsArray;
+        this.LongDescs = LongDescsArray;
         this.mcontext = mcontext;
     }
 
