@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/listItemLayout"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:padding="15dp">
+    android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/listTitle"
+        android:id="@+id/details_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:textStyle="bold"/>
+        android:textSize="25sp"
+        android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/listDescription"
+        android:id="@+id/details_description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="15sp" />
