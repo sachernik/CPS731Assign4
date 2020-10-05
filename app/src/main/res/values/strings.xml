@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">Dance Classes</string>
+
+    <string-array name="titles_array">
+        <item> Ballet Beginner </item>
+        <item> Ballet Intermediate </item>
+        <item> Ballet Conditioning All-Levels </item>
+        <item> Jazz Beginner-Intermediate </item>
+        <item> Tap Intermediate </item>
+        <item> Salsa Beginner </item>
+        <item> Salsa Intermediate </item>
+        <item> Contemporary Intermediate </item>
+        <item> Contemporary Advanced </item>
+        <item> Hip Hop All Levels </item>
+    </string-array>
+
+    <string-array name="descs_array">
+        <item>  </item>
+    </string-array>
 </resources>

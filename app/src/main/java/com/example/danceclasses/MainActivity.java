@@ -4,11 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Context;
 import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
 
+    /*
     String[] Titles = new String[]{
             "Ballet Beginner",
             "Ballet Intermediate",
@@ -20,6 +22,9 @@ public class MainActivity extends AppCompatActivity {
             "Contemporary Intermediate",
             "Contemporary Advanced",
             "Hip Hop All Levels"};
+     */
+    Context context;
+    String[] Titles = new String[10];
     String[] Descriptions = new String[]{
             "The beginner ballet class runs Mondays 5pm - 6pm.",
             "The intermediate ballet class runs Mondays 6pm - 7pm.",
@@ -36,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        context = getApplicationContext();
+        this.Titles = context.getResources().getStringArray(R.array.titles_array);
         setContentView(R.layout.activity_main);
         RecyclerView rv = findViewById(R.id.recyclerview);
         rv.setAdapter(new RecyclerViewAdapter(this,Titles,Descriptions));
