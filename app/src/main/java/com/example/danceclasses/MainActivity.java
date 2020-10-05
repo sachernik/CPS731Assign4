@@ -9,14 +9,28 @@ import android.os.Bundle;
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
 
-    String[] Titles = new String[]{"Ballet", "Jazz", "Tap", "Salsa", "Contemporary","Hip Hop"};
+    String[] Titles = new String[]{
+            "Ballet Beginner",
+            "Ballet Intermediate",
+            "Ballet Conditioning All-Levels",
+            "Jazz Beginner-Intermediate",
+            "Tap Intermediate",
+            "Salsa Beginner",
+            "Salsa Intermediate",
+            "Contemporary Intermediate",
+            "Contemporary Advanced",
+            "Hip Hop All Levels"};
     String[] Descriptions = new String[]{
             "The beginner ballet class runs Mondays 5pm - 6pm.",
+            "The intermediate ballet class runs Mondays 6pm - 7pm.",
+            "The ballet conditioning class runs Saturdays 10am-11am.",
             "The beginner-intermediate jazz class runs Mondays 7pm-9pm.",
             "The intermediate tap class runs Wednesdays 6pm-7pm.",
-            "The beginner salsa class will start running in November 2020, day and time TBD.",
+            "All salsa classes will start running in November 2020, day and time TBD.",
+            "All salsa classes will start running in November 2020, day and time TBD.",
             "The intermediate contemporary class runs Tuesdays 6pm-7pm.",
-            "The beginner hip hop class runs Thursdays 6pm-7pm and Fridays 5pm-6pm."
+            "The advanced contemporary class runs Tuesdays 7pm-8pm.",
+            "The hip hop class runs Thursdays 6pm-7pm and Fridays 5pm-6pm."
     };
 
     @Override

@@ -14,8 +14,8 @@ import androidx.recyclerview.widget.RecyclerView;
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
     private static final String TAG = "RecyclerViewAdapter";
 
-    private String[] Titles = new String[6];
-    private String[] Descriptions = new String[6];
+    private String[] Titles = new String[10];
+    private String[] Descriptions = new String[10];
     private Context mcontext;
 
     public RecyclerViewAdapter(Context mcontext, String[] TitlesArray, String[] DescriptionsArray) {
