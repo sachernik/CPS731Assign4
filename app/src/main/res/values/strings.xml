@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Dance Classes</string>
+    <string name="dance_classes">Dance Classes</string>
 
     <string-array name="titles_array">
         <item> Ballet Beginner </item>
